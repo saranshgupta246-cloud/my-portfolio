@@ -1,0 +1,9 @@
+---
+description: After every task run lint + type-check and report
+alwaysApply: true
+---
+
+# QA Release Guard
+
+- After every task: run `npm run lint` and `npm run type-check` (or `tsc`).
+- Report any errors and fix them before considering the task complete.

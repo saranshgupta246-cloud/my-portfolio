@@ -1,0 +1,17 @@
+---
+description: api-chat-security — validation, rate limit, server-only keys, no hallucinated claims
+globs: "app/api/**/*.ts,lib/**/*.ts"
+alwaysApply: false
+---
+
+# API Chat Security
+
+## Chat backend (app/api/chat/route.ts)
+- Use Anthropic API only. Keep API keys server-side (env vars); never expose in client.
+- Answer only from provided portfolio data (me, projects, skills). No fake claims or invented facts.
+- Use zod (or equivalent) for input validation; apply basic rate limiting.
+- Use strict TypeScript types for request/response; no `any` unless unavoidable.
+
+## General
+- Reusable helpers in `lib/` with clear names and typed interfaces.
+- Small, single-purpose functions.

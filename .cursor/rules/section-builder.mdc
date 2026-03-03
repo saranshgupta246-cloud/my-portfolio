@@ -1,0 +1,11 @@
+---
+description: Build sections from data/* only; no hardcoded content
+globs: "**/*.tsx,app/**"
+alwaysApply: false
+---
+
+# Section Builder
+
+- Sections and page content must come from `data/` only: me.ts, projects.ts, skills.ts.
+- Projects: support status `draft` | `published`; render only items with `status === "published"`.
+- Never hardcode project cards, copy, or list items in JSX; always derive from data.

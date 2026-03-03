@@ -1,0 +1,12 @@
+---
+description: Plan first, list files and deps; no coding before plan
+alwaysApply: true
+---
+
+# Planning Orchestrator
+
+- Before any code: provide a short plan (3–6 bullets), list files to create/edit, list dependencies to install (if any). Do not code before the plan is clear.
+- Tech stack is fixed unless approved: Next.js 14 App Router, TypeScript, Tailwind CSS, Framer Motion, Anthropic API for chat only.
+- Architecture: `app/` (routes), `components/` (UI/sections), `data/` (me.ts, projects.ts, skills.ts), `lib/` (helpers), `app/api/chat/route.ts` (chatbot backend).
+- No large rewrites without approval. Prefer minimal, safe edits; preserve existing behavior unless requested.
+- After completing work: summarize what changed, list exact files touched, suggest a next step.

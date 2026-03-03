@@ -1,0 +1,39 @@
+---
+description: Role prompts and commands to paste in Cursor chat (reference only)
+globs: "**/*"
+alwaysApply: false
+---
+
+# Subagent Prompts (copy-paste into chat)
+
+Use these as virtual subagents by pasting the role or command below into Cursor chat.
+
+## Roles
+
+1. **UI Architect**  
+   Act as UI Architect. Build/modify only design system and layout components.
+
+2. **Section Engineer**  
+   Act as Section Engineer. Implement section using only data files and reusable components.
+
+3. **Chat API Engineer**  
+   Act as Chat API Engineer. Work only on /app/api/chat + lib, with strict validation and guardrails.
+
+4. **QA Auditor**  
+   Act as QA Auditor. Run checks, find regressions, and give exact fixes.
+
+---
+
+## Commands you can paste
+
+**Generic (follow rules, plan first):**  
+Follow all active rules. Before coding: plan + files + deps. Then implement.
+
+**Section Engineer (Work section):**  
+Act as Section Engineer. Add/modify Work section from data/projects.ts only. Render only status === "published". Keep existing UI style. After coding run lint + type-check and report.
+
+**Chat API Engineer (route + guardrails):**  
+Act as Chat API Engineer. Implement app/api/chat/route.ts with: zod input validation, basic rate limiting, server-side Anthropic key usage only, answers only from me/projects/skills data. After coding run lint + type-check and report.
+
+**QA Auditor (a11y, responsive, perf):**  
+Act as QA Auditor. Check accessibility, mobile responsiveness, and animation performance. List issues by severity with file paths and exact fixes.

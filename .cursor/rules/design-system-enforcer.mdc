@@ -1,0 +1,14 @@
+---
+description: Navy/mint/orange tokens only; no random colors
+alwaysApply: true
+---
+
+# Design System Enforcer
+
+- Use only these CSS variables (tokens). Do not hardcode hex/rgb elsewhere.
+- Base: `--color-base` #0B1020
+- Surface: `--color-surface` #111A33
+- Accent mint: `--color-accent-mint` #00D1B2
+- Accent orange: `--color-accent-orange` #FF6B35
+- Text primary: `--color-text-primary` #EAF2FF
+- Text secondary: `--color-text-secondary` #A9B6CC

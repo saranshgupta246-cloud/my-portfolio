@@ -1,0 +1,11 @@
+---
+description: Framer Motion + prefers-reduced-motion, keyboard/focus, performance limits
+globs: "**/*.tsx"
+alwaysApply: false
+---
+
+# Motion, A11y & Performance
+
+- Use Framer Motion only where needed; respect `prefers-reduced-motion` (reduce or disable non-essential motion).
+- Semantic HTML (section, nav, main, header, footer). Visible keyboard focus states; aria-label/aria-labelledby on interactive controls.
+- Prefer server components; use client components only for interactivity or motion. Optimize images and animation cost; no unnecessary libraries.
